@@ -21,8 +21,8 @@ module Templating =
                 aAttr [attr.href (ctx.Link act)] [text txt]
              ]
         [
-            li ["Hem"     => EndPoint.Home]
-            li ["Om osos" => EndPoint.About]
+            li ["Hem"    => EndPoint.Home]
+            li ["Om oss" => EndPoint.About]
         ]
 
     let Main ctx action title body =

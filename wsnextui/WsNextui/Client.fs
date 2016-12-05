@@ -138,6 +138,12 @@ module Client =
             ]
         ]
 
+    let description () =
+            div [
+                text "A small website about bobsleighs, demonstrating how UI.Next \
+                    may be used to structure single-page applications."
+            ]
+
     let Old ctx =
         let rvInput = Var.Create ""
         let submit = Submitter.CreateOption rvInput.View
@@ -174,10 +180,3 @@ module Client =
             | BobsleighTeam -> Team ctx |> withNavbar
             )
         |> Doc.EmbedView
-
-
-    let description () =
-            div [
-                text "A small website about bobsleighs, demonstrating how UI.Next \
-                    may be used to structure single-page applications."
-            ]
